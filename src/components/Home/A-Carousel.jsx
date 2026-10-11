@@ -6,10 +6,10 @@
 // import "swiper/css/navigation";
 // import "./BannerCarousel.css";
 
-// import ragaBanner from "../../assets/images/Hero-Page/raga-banner1.jpg";
-// import bestsellerBanner from "../../assets/images/Hero-Page/bestsellar-banner2.jpg";
-// import newArrivalsBanner from "../../assets/images/Hero-Page/new-arrivals-banner3.jpg";
-// import smartBanner from "../../assets/images/Hero-Page/Smart-banner4.jpg";
+// import ragaBanner from "../../assets/Images/Hero-Page/raga-banner1.jpg";
+// import bestsellerBanner from "../../assets/Images/Hero-Page/bestsellar-banner2.jpg";
+// import newArrivalsBanner from "../../assets/Images/Hero-Page/new-arrivals-banner3.jpg";
+// import smartBanner from "../../assets/Images/Hero-Page/Smart-banner4.jpg";
 
 // // banners with unique className
 // const banners = [

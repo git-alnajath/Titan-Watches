@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./HeroHome.css";
 // import heroPic from "../../assets/Images/hero-pic.jpg";
-// import heroPic from "../../assets/images/hero-pic.jpeg";
-import hero_pic from "../../assets/images/Hero-Page/hero-pic.jpeg";
+// import heroPic from "../../assets/Images/hero-pic.jpeg";
+import hero_pic from "../../assets/Images/Hero-Page/hero-pic.jpeg";
 // import hero_pic1 from "../../assets/Images/Watches/contact-watch-png.png";
 
 export default function Hero() {
