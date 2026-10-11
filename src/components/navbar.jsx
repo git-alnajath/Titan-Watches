@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./navbar.css";
 import titanlogo from "../assets/Images/Watches/titan-logo.jpg";
 
 export default function Navbar() {
