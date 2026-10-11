@@ -1,0 +1,423 @@
+/* Innovative Contact Section */
+
+/* Mobile Footer Styles */
+.mobile-footer {
+    background: #000;
+    color: #fff;
+    padding: 30px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 30px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    /* text-align: start; */
+
+}
+
+/* Hide checkbox */
+.dropdown-toggle {
+    display: none;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-header h3 {
+    font-size: 14px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: start;
+    margin: 0;
+}
+
+.dropdown-icon {
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown functionality with CSS only */
+.footer-links {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.dropdown-toggle:checked~.footer-links {
+    display: flex;
+}
+
+.dropdown-toggle:checked~.footer-header .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: #d4af37;
+}
+
+/* App Download */
+.app-download {
+    /* background-color: #826404; */
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.app-download h3 {
+    /* text-align: center; */
+    font-size: 14px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.app-btn {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5px;
+    background: #333;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid white;
+}
+
+.app-btn:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+.app-btn i {
+    font-size: 24px;
+}
+
+.app-btn p {
+    font-size: 8px;
+    white-space: nowrap;
+    text-align: start;
+}
+
+.app-btn p span {
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+/* Social Media */
+.social-section {
+    /* display: flex;
+    text-align: center;
+    justify-content: center; */
+    min-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: white;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Help Section */
+.help-section {
+    min-width: 400px;
+    text-align: start;
+    /* border: 1px solid #333; */
+    /* border-radius: 10px; */
+    padding: 20px 0px 10px 0px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.help-section .whatsapp-text {
+    display: flex;
+    min-width: 240px;
+    font-size: 13px;
+    font-size: bold;
+    gap: 10px;
+}
+
+.help-section .whatsapp-text a {
+    width: 32px;
+    height: 32px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.help-section .whatsapp-text a:hover {
+    background-color: white;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.help-text {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+
+.timing {
+    font-size: 14px;
+    /* opacity: 1; */
+    /* line-height: 1.5; */
+    white-space: nowrap;
+}
+
+
+
+/* Footer Bottom */
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Payment Methods */
+.payment-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    /* justify-content: center; */
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.payment-methods img {
+    height: 30px;
+    width: 60px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.legal-links a {
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.legal-links a:hover {
+    opacity: 1;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Mobile View (Default) - Column Layout with Dropdowns */
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .mobile-footer {
+        padding: 20px 15px;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .app-download .app-d {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        /* padding: 0px 10px; */
+    }
+
+    .app-btn {
+        width: 130px;
+        justify-content: center;
+    }
+
+    .social-section {
+        display: flex;
+        /* background-color: aqua; */
+        align-items: center;
+        /* justify-content: center; */
+        gap: 15px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons .footer-title {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .dropdown-icon {
+        display: block;
+    }
+
+    .help-section {
+        min-width: 100px;
+        /* margin: 30px auto; */
+        text-align: start;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Footer Bottom */
+    .copyright {
+        font-size: 12px;
+        opacity: 0.8;
+        margin-bottom: 15px;
+    }
+
+    .legal-links {
+        display: flex;
+        gap: 10px;
+        /* align-items: end; */
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .legal-links a {
+        text-decoration: none;
+        font-size: 12px;
+        min-width: 100px;
+    }
+}
+
+/* Tablet & Desktop View - Row Layout, No Dropdowns */
+@media (min-width: 481px) {
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 150px;
+        margin-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+    }
+
+    .footer-header {
+        cursor: default;
+    }
+
+    .dropdown-icon {
+        display: none;
+    }
+
+    .footer-links {
+        display: flex !important;
+    }
+
+
+    .app-download .app-d {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+        padding: 0px 10px;
+    }
+
+    .social-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .help-section {
+        max-width: 100%;
+        text-align: start;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

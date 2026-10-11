@@ -1,0 +1,86 @@
+/* Container */
+.pb-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* Wrapper - for sliding effect */
+.pb-carousel-wrapper {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+/* Every slide same size */
+.pb-carousel-slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 86px;
+    /* Banner1 ku fit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    /* safe bg for Banner2 */
+}
+
+.pb-carousel-slide img {
+    width: 100%;
+    height: 86px;
+    object-fit: fill;
+}
+
+/* Prev & Next Buttons */
+.pb-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.pb-carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Button Positions */
+.pb-prev {
+    left: 15px;
+}
+
+.pb-next {
+    right: 15px;
+}
+
+/* Dots Section */
+.pb-carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.pb-dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pb-dot.active {
+    background-color: #fff;
+    /* ✅ fixed selector */
+}

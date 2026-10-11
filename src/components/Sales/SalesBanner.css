@@ -1,0 +1,76 @@
+/* Container */
+.sales-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* Wrapper - for sliding effect */
+.sales-carousel-wrapper {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+/* Each Banner Image */
+.sales-carousel-wrapper img {
+    width: 100%;
+    /* full width */
+    height: auto;
+    /* maintain ratio */
+    object-fit: cover;
+    /* fill space properly */
+    flex-shrink: 0;
+}
+
+/* Prev & Next Buttons */
+.sales-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.sales-carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Button Positions */
+.sales-prev {
+    left: 15px;
+}
+
+.sales-next {
+    right: 15px;
+}
+
+/* Dots Section */
+.sales-carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.sales-dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sales-dot.active {
+    background-color: #fff;
+}

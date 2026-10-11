@@ -1,0 +1,89 @@
+/* Categories Menu */
+.categories-menu {
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 10px;
+    background: white;
+    border-bottom: 1px solid white;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    /* background-color: aqua; */
+}
+
+.categories-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.categories-menu .menu-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 12px 20px;
+    /* border-radius: 20px; */
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    background: white;
+}
+
+/* Black line effect on hover */
+.categories-menu .menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #000;
+    transition: all 0.5s ease;
+    /* padding: 0; */
+    /* transform: translateX(-50%); */
+}
+
+.categories-menu .menu-link:hover::after {
+    /* padding: 0; */
+    width: 100%;
+    left: 0;
+}
+
+.categories-menu .menu-link:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .categories-menu {
+        justify-content: flex-start;
+        padding: 12px 10px;
+    }
+
+    .categories-menu .menu-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .categories-menu .menu-link::after {
+        height: 2px;
+    }
+
+    .categories-menu .menu-link:hover::after {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    /* .categories-menu {
+        order: 4;
+    } */
+
+    .categories-menu .menu-link {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

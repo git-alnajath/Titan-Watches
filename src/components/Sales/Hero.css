@@ -1,0 +1,63 @@
+/* Hero Section */
+.sales {
+    background: linear-gradient(rgba(35, 32, 32, 0.8), rgba(32, 32, 32, 0.8)), url('../../assets/Images/Hero-Page/Regalia_opulent_4.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    height: 80vh;
+}
+
+.sales .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sales h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(255, 179, 0);
+
+    /* white-space: nowrap; */
+}
+
+.sales p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.sales .cta-button {
+    display: inline-block;
+    background: rgba(255, 183, 0, 0.5);
+    color: white;
+    padding: 15px 35px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s;
+    margin-bottom: 50px;
+}
+
+.sales .cta-button:hover {
+    background: goldenrod;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sales h2 {
+        font-size: 32px;
+    }
+
+    .sales p {
+        font-size: 16px;
+    }
+
+    .sales .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}

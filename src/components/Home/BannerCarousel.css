@@ -1,0 +1,389 @@
+.carousel-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+}
+
+/* Slide wrapper */
+.banner-slide {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Image correct fit */
+.banner-img {
+    width: 90%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    /* background-color: #e65c00; */
+}
+
+/* 🔽 Overlay text + buttons 🔽 */
+.banner-info {
+    position: absolute;
+    color: #ffffff;
+    z-index: 10;
+    background-color: transparent;
+    padding: 20px;
+    /* width: 100%; */
+}
+
+/* Cocktails banner */
+.banner-cocktails {
+    top: 25%;
+    left: 45%;
+    text-align: right;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.banner-cocktails .details {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0px;
+
+}
+
+.banner-cocktails h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    /* line-height: 1.1; */
+    color: #fff;
+}
+
+/* Middle line (span + brand) */
+.banner-cocktails .banner-subtext {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+.banner-cocktails .banner-subtext span {
+    font-size: 20px;
+    /* span size smaller */
+    margin-right: 5px;
+    opacity: 0.8;
+}
+
+.banner-cocktails .banner-subtext strong {
+    font-size: 30px;
+    /* brand little bigger */
+    font-weight: bold;
+}
+
+/* Bottom line (Cocktails text) */
+.banner-cocktails .banner-cocktail {
+    font-size: 70px;
+    font-family: "Brush Script MT", cursive;
+    /* change if needed */
+    font-weight: normal;
+    color: #fff;
+    /* margin-top: 10px; */
+}
+
+.banner-cocktails .banner-btn {
+    width: 100px;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+
+.banner-cocktails .banner-btn:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+/* Bestsellers banner */
+.banner-bestsellers {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* max-width: 500px; */
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+}
+
+.banner-bestsellers h2 {
+    font-size: 32px;
+}
+
+.banner-bestsellers .banner-btn {
+    background-color: #dda243;
+    font-size: 14px;
+    padding: 20px 80px;
+    color: black;
+    font-weight: bold;
+    /* border-radius: 6px; */
+    /* text-decoration: none; */
+    transition: all 0.3s ease;
+}
+
+.banner-bestsellers .banner-btn:hover {
+    background-color: #a4772e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+/* New Arrivals banner */
+.banner-arrivals {
+    top: 50%;
+    left: 23%;
+    text-align: right;
+    max-width: 350px;
+}
+
+.banner-arrivals h2 {
+    font-size: 26px;
+}
+
+.banner-arrivals .banner-btn {
+    padding: 7px 16px;
+    background-color: #ffffff;
+    font-size: 14px;
+    padding: 5px 8px;
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
+    /* border-radius: 10px; */
+    opacity: 0.8;
+    /* text-decoration: none; */
+    transition: all 0.3s ease;
+}
+
+.banner-arrivals .banner-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Smart banner */
+.banner-smart {
+    top: 15%;
+    left: 15%;
+    text-align: left;
+    max-width: 450px;
+}
+
+.banner-smart h2 {
+    font-size: 36px;
+}
+
+.banner-smart .banner-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Common button style */
+.banner-btn {
+    display: inline-block;
+    /* margin-right: 12px; */
+    padding: 10px 20px;
+    background: #ff6a00;
+    color: #fff;
+    /* border-radius: 6px; */
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* .banner-btn:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+} */
+
+/* 🔼 Overlay text + buttons 🔼 */
+
+/* navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(255, 165, 0, 0.9);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* positioning */
+.swiper-button-prev {
+    left: 15px;
+}
+
+.swiper-button-next {
+    right: 15px;
+}
+
+/* Banner names bottom */
+.banner-names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 30px;
+    background-color: white;
+}
+
+.banner-name {
+    position: relative;
+    text-align: center;
+}
+
+.banner-name span {
+    font-size: 18px;
+    color: #777;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.banner-name span.active {
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+/* Progress bar */
+.progress-bar {
+    height: 4px;
+    background: #ff6a00;
+    margin-top: 5px;
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+/* 🔽 Mobile Responsive Fix 🔽 */
+@media (max-width: 480px) {
+
+    /* Banner names - center, small gap */
+    .banner-names {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .banner-name span {
+        font-size: 14px;
+    }
+
+    /* Cocktails banner responsive */
+    .banner-cocktails {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .banner-cocktails h1 {
+        font-size: 36px;
+    }
+
+    .banner-cocktails .banner-subtext {
+        font-size: 14px;
+    }
+
+    .banner-cocktails .banner-subtext strong {
+        font-size: 18px;
+    }
+
+    .banner-cocktails .banner-cocktail {
+        font-size: 40px;
+    }
+
+    .banner-cocktails .banner-btn {
+        width: auto;
+        padding: 8px 16px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Bestsellers banner adjust */
+    .banner-bestsellers {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .banner-bestsellers h2 {
+        font-size: 20px;
+    }
+
+    .banner-bestsellers .banner-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Arrivals banner */
+    .banner-arrivals {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .banner-arrivals h2 {
+        font-size: 20px;
+    }
+
+    /* Smart banner */
+    .banner-smart {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .banner-smart h2 {
+        font-size: 22px;
+    }
+
+    .banner-smart .banner-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+}

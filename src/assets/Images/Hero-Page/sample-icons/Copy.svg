@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Copy" transform="translate(-844 -283)">
+    <rect id="Rectangle_11125" data-name="Rectangle 11125" width="18" height="18" transform="translate(844 283)" fill="none"/>
+    <g id="Icon_feather-copy" data-name="Icon feather-copy" transform="translate(847.734 286.734)">
+      <path id="Path_5845" data-name="Path 5845" d="M14.641,13.5h5.134a1.141,1.141,0,0,1,1.141,1.141v5.134a1.141,1.141,0,0,1-1.141,1.141H14.641A1.141,1.141,0,0,1,13.5,19.775V14.641A1.141,1.141,0,0,1,14.641,13.5Z" transform="translate(-10.385 -10.385)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_5846" data-name="Path 5846" d="M4.711,10.416h-.57A1.141,1.141,0,0,1,3,9.275V4.141A1.141,1.141,0,0,1,4.141,3H9.275a1.141,1.141,0,0,1,1.141,1.141v.57" transform="translate(-3 -3)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Rye&family=UnifrakturMaguntia&display=swap');
+
+.hero {
+    max-height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.hero img {
+    background-color: rgb(0, 0, 0);
+    height: 550px;
+    max-width: 650px;
+    background-size: cover;
+}
+
+.hero aside {
+    color: white;
+    font-family: 'Cinzel', serif;
+    /* For headings */
+    /* background-color: antiquewhite; */
+    /* font-size: 50px; */
+}
+
+.hero aside #hP-info h1 {
+    font-size: 50px;
+}
+
+.hero aside #buttons {
+    display: flex;
+
+}
+
+#buttons {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    /* background-color: antiquewhite; */
+}
+
+#buttons .btn {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid gold;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* border-radius: 8px; */
+    cursor: pointer;
+    border-top-color: goldenrod;
+    border-right-color: goldenrod;
+}
+
+#buttons .btn:hover {
+    background-color: gold;
+    color: black;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero img {
+        min-width: 300px;
+        height: 450px;
+    }
+
+    .hero aside #hP-info h1 {
+        font-size: 35px;
+    }
+
+    #buttons .btn {
+        font-size: 10px;
+    }
+}
